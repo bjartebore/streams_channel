@@ -4,15 +4,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:streams_channel/streams_channel.dart';
+import 'package:streams_channel2/streams_channel2.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 final StreamsChannel streamsChannel = StreamsChannel('streams_channel_example');
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState() => new _MyAppState();
+  _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -55,20 +55,20 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Demo'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Demo'),
         ),
-        body: new Center(
+        body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new FlatButton(
+              FlatButton(
                 onPressed: () => _start(true),
                 child: Text(_subscriptionA != null ? 'Stop A' : 'Start A'),
               ),
-              new FlatButton(
+              FlatButton(
                 onPressed: () => _start(false),
                 child: Text(_subscriptionB != null ? 'Stop B' : 'Start B'),
               ),

@@ -45,7 +45,7 @@ class StreamsChannel {
         FlutterError.reportError(new FlutterErrorDetails(
           exception: exception,
           stack: stack,
-          library: 'streams_channel',
+          library: 'streams_channel2',
           context: DiagnosticsNode.message(
               'while activating platform stream on channel $name'),
         ));
@@ -59,7 +59,7 @@ class StreamsChannel {
         FlutterError.reportError(new FlutterErrorDetails(
           exception: exception,
           stack: stack,
-          library: 'streams_channel',
+          library: 'streams_channel2',
           context: DiagnosticsNode.message(
               'while de-activating platform stream on channel $name'),
         ));
