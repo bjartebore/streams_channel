@@ -153,7 +153,7 @@ public class DemoPlugin {
 
 ## Author
 
-Beacons plugin is developed by Loup, a mobile development studio based in Montreal and Paris.  
+Originally plugin was developed by Loup  
 You can contact us at <hello@loup.app>
 
 ## License
