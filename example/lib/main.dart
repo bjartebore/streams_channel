@@ -1,4 +1,4 @@
-//  Copyright (c) 2018 Loup Inc.
+//  Copyright (c) 2021 Kfir Matityahu
 //  Licensed under Apache License v2.0
 
 import 'dart:async';
