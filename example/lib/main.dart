@@ -16,12 +16,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  StreamSubscription<dynamic> _subscriptionA;
-  StreamSubscription<dynamic> _subscriptionB;
+  StreamSubscription<dynamic>? _subscriptionA;
+  StreamSubscription<dynamic>? _subscriptionB;
 
   void _start(bool a) {
     // ignore: cancel_subscriptions
-    StreamSubscription<dynamic> subscription =
+    StreamSubscription<dynamic>? subscription =
         a ? _subscriptionA : _subscriptionB;
 
     if (subscription != null) {

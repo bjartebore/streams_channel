@@ -1,4 +1,4 @@
-//  Copyright (c) 2018 Loup Inc.
+//  Copyright (c) 2021 Kfir Matityahu
 //  Licensed under Apache License v2.0
 
 import 'dart:async';
@@ -23,10 +23,10 @@ class StreamsChannel {
     final id = ++_lastId;
     final handlerName = '$name#$id';
 
-    StreamController<dynamic> controller;
+    late StreamController<dynamic> controller;
     controller = new StreamController<dynamic>.broadcast(onListen: () async {
-      ServicesBinding.instance.defaultBinaryMessenger
-          .setMessageHandler(handlerName, (ByteData reply) async {
+      ServicesBinding.instance!.defaultBinaryMessenger
+          .setMessageHandler(handlerName, (ByteData? reply) async {
         if (reply == null) {
           controller.close();
         } else {
@@ -51,7 +51,7 @@ class StreamsChannel {
         ));
       }
     }, onCancel: () async {
-      ServicesBinding.instance.defaultBinaryMessenger
+      ServicesBinding.instance!.defaultBinaryMessenger
           .setMessageHandler(handlerName, null);
       try {
         await methodChannel.invokeMethod('cancel#$id', arguments);

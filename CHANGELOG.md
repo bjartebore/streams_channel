@@ -1,3 +1,6 @@
+## 1.0.0
+* Migrated into Null-Safety
+
 ## 0.3.0
 
 - Upgrade project structure to flutter v1.12
