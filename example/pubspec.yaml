@@ -9,5 +9,5 @@ dependencies:
   flutter:
     sdk: flutter
 
-  streams_channel2:
+  streams_channel3:
     path: ../

@@ -4,7 +4,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:streams_channel2/streams_channel2.dart';
+import 'package:streams_channel3/streams_channel3.dart';
 
 void main() => runApp(MyApp());
 

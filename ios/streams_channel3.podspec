@@ -3,7 +3,7 @@
 # Run `pod lib lint streams_channel.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'streams_channel2'
+  s.name             = 'streams_channel3'
   s.version          = '0.0.1'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC

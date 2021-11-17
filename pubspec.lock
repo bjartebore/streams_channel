@@ -32,13 +32,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
-  streams_channel3:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "1.0.0+1"
   typed_data:
     dependency: transitive
     description:
