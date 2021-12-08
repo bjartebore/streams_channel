@@ -1,3 +1,6 @@
+## 1.0.1
+* Changed ios deployment target
+
 ## 1.0.0
 * Migrated into Null-Safety
 
